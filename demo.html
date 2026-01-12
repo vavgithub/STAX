@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <title>STAX - Request a Demo</title>
+</head>
+
+<body class="bg_secondary_80">
+    <header class="header ">
+        <div class="header_main wrapper_1920">
+            <div class=" flex justify_between align_center">
+                 <a href="/home.html">
+                    <img class="header_logo" src="./assets/images/logo.png" alt="logo">
+                </a>
+                <div class="flex gap_8 align_center">
+                    <div class="nav_items">
+                        <a class="nav_link" href="/features.html">Features & Pricing</a>
+                        <a class="nav_link" href="/about.html">About Us</a>
+                        <a class="nav_link" href="/download.html">Download</a>
+                                        <a class="nav_link" href="/download.html#support">Support</a>
+
+                        <a class="nav_link" href="#contact_section">Contact Us</a>
+                    </div>
+                    <a href="/demo.html">
+                        <button class="info_btn btn_small">Request a Demo</button>
+                    </a>
+                    <!--<button class="info_btn btn_small">Request a Demo</button>-->
+                    <div class="mobile_nav_items">
+                        <div id="nav_hamburger">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.16675 9H32.8334V12.6667H7.16675V9ZM7.16675 18.1667H32.8334V21.8333H7.16675V18.1667ZM32.8334 27.3333V31H7.16675V27.3333H32.8334Z"
+                                    fill="#BBD0FF" />
+                            </svg>
+                        </div>
+                        <div id="nav_cross">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 18.1057L8.89426 7L7 8.89426L18.1057 20L7 31.1057L8.89426 33L20 21.8943L31.1057 33L33 31.1057L21.8943 20L33 8.89426L31.1057 7L20 18.1057Z"
+                                    fill="#BBD0FF" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile_nav" class="mobile_nav_dropdown flex flex_column gap_6 ">
+                <a class="nav_link mt-6" href="/features.html">Features & Pricing</a>
+                <a class="nav_link" href="/about.html">About Us</a>
+                <a class="nav_link" href="/download.html">Download</a>
+                <a class="nav_link" href="/download.html#support">Support</a>
+
+                <a class="nav_link" href="#contact_section">Contact Us</a>
+            </div>
+            <p class="top_head typography_medium mt-6 text_primary bold">The industry leading tool for modernizing
+                hangar management
+                globally</p>
+        </div>
+    </header>
+
+    <section class="request_form_section bg_secondary_80 overflow_hidden">
+        <form class="wrapper_1280">
+            <h1 class="text_primary_90">Request a Demo</h1>
+            <h3 class="form_sub_head text_teritiary_80 typography_3x_large">See How Stax™ Can Transform Your Hangar
+                Operations</h3>
+            <p class="form_sub_desc typography_medium text_teritiary_80">Book a live demo with our team and discover how
+                Stax helps
+                FBOs, MRO’s operators, and airports maximize space, reduce movements, and increase revenue—all while
+                improving safety.</p>
+            <p class="text_info typography_2x_small my-9 ">Required fields are in yellow</p>
+            <div class="form_main flex  gap_15">
+                <div class="left_section flex flex_column ">
+                    <input class="required" type="text" id="name" placeholder="Name">
+                    <input class="required" type="text" id="title" placeholder="Title">
+                    <input class="required" type="text" id="company" placeholder="Company">
+                    <input class="required" type="email" id="email" placeholder="Email">
+                    <input class="required" type="tel" id="phone" placeholder="Phone">
+                    <button class="desktop_submit_btn primary_btn w-100 mt-6 btn_large">Submit Request</button>
+                </div>
+                <div class="right_section w-100">
+                    <div class="right_main">
+                        <div id="demo-day" class="flex flex_column ">
+                            <p class="demo-day text_primary_90 typography_body mb-4 bold">Best Day(s) for demo</p>
+                            <div class="checkbox_main check_large">
+                                <label for="demo-monday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-monday">
+                                    <p>Mon</p>
+                                </label>
+                                <label for="demo-tuesday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-tuesday">
+                                    <p>Tue</p>
+                                </label>
+                                <label for="demo-wednesday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-wednesday">
+                                    <p>Wed</p>
+                                </label>
+                                <label for="demo-thursday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-thursday">
+                                    <p>Thur</p>
+                                </label>
+                                <label for="demo-friday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-friday">
+                                    <p>Fri</p>
+                                </label>
+                                <label for="demo-saturday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-saturday">
+                                    <p>Sat</p>
+                                </label>
+                                <label for="demo-sunday" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-day" id="demo-sunday">
+                                    <p>Sun</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="demo-time" class="flex flex_column ">
+                            <p class="demo-time text_primary_90 typography_body mb-4 bold">Best Time(s) for demo</p>
+                            <div class="checkbox_main check_small">
+                                <label for="demo-early_morning" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-time" id="demo-early_morning">
+                                    <p>Early Morning</p>
+                                </label>
+                                <label for="demo-late_morning" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-time" id="demo-late_morning">
+                                    <p>Late Morning</p>
+                                </label>
+                                <label for="demo-early_afternoon" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-time" id="demo-early_afternoon">
+                                    <p>Early Afternoon</p>
+                                </label>
+                                <label for="demo-late_afternoon" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-time" id="demo-late_afternoon">
+                                    <p>Late Afternoon</p>
+                                </label>
+                                <label for="demo-eve_night" class="flex align_center gap_4">
+                                    <input type="checkbox" name="demo-time" id="demo-eve_night">
+                                    <p>Evening / Night</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border_primary_90 mt-12 mb-12">
+                    <div class="right_optional">
+                        <h5 class="text_primary_90 mt-0 mb-0">Optional Info</h5>
+                        <select class="about_stax_select " name="about_stax" id="about_stax" required>
+                            <option value="" disabled selected hidden>How did you hear of Stax™?</option>
+                            <option value="dummy1">Dummy 1</option>
+                            <option value="dummy2">Dummy 2</option>
+                        </select>
+
+                        <div id="seen-demo" class="flex flex_column ">
+                            <p class="seen-demo text_primary_90 typography_body mb-4 bold">Have you seen an on-screen
+                                demo
+                                of Stax™?</p>
+                            <div class="radio_main flex gap_20">
+                                <label for="demo-have-seen" class="flex align_center gap_4">
+                                    <input type="radio" name="seen-demo" id="demo-have-seen">
+                                    <span class="custom_radio"></span>
+                                    <p>Yes</p>
+                                </label>
+                                <label for="demo-not-seen" class="flex align_center gap_4">
+                                    <input type="radio" name="seen-demo" id="demo-not-seen">
+                                    <span class="custom_radio"></span>
+                                    <p>No</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <select class="stacking_method_select " name="stack_method" id="stack_method" required>
+                            <option value="" disabled selected hidden>What method do you currently use for stacking?
+                            </option>
+                            <option value="dummy1">Dummy 1</option>
+                            <option value="dummy2">Dummy 2</option>
+                        </select>
+
+                        <div id="on-screen-demo-v2" class="flex flex_column ">
+                            <p class="on-screen-demo-v2 text_primary_90 typography_body mb-4 bold">Have you seen an
+                                on-screen demo
+                                of Stax™?</p>
+                            <div class="checkbox_v2_main ">
+                                <label for="seen-demo-opt1" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2"
+                                        value="Building, expanding, or buying a hangar" id="seen-demo-opt1">
+                                    <p>Building, expanding, or buying a hangar</p>
+                                </label>
+                                <label for="seen-demo-opt2" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt2">
+                                    <p>Near capacity and want to stack more efficiently</p>
+                                </label>
+                                <label for="seen-demo-opt3" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt3">
+                                    <p>Planning for a major event</p>
+                                </label>
+                                <label for="seen-demo-opt4" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt4">
+                                    <p>Increase revenue (rents, fuel sales, maintenance)</p>
+                                </label>
+                                <label for="seen-demo-opt5" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt5">
+                                    <p>Reduce costs (man-hours, movements, utilities, insurance premiums)</p>
+                                </label>
+                                <label for="seen-demo-opt6" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt6">
+                                    <p>Reduce accidents (personnel, hangar rash)</p>
+                                </label>
+                                <label for="seen-demo-opt7" class="flex align_center gap_4">
+                                    <input type="checkbox" name="on-screen-demo-v2" id="seen-demo-opt7">
+                                    <p>Improve customer service (front desk, professional image)</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <textarea name="message" id="message" placeholder="Please enter your message here"></textarea>
+
+                    </div>
+
+                </div>
+                <button class="mobile_submit_btn hidden primary_btn w-100 mt-6 btn_large">Submit Your Message</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="bg_background_70 p-16">
+        <div class="wrapper_1280  ">
+            <div class="desktop_footer grid grid_cols_5">
+                <div>
+                    <a href="/home.html">
+                        <img class="footer_logo" src="./assets/images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="flex flex_column gap_6">
+                    <a class="foot_link" href="/home.html">Home</a>
+                    <a class="foot_link" href="/features.html">Features & Pricing</a>
+                    <a class="foot_link" href="/about.html">About Us</a>
+                </div>
+                <div class="flex flex_column gap_6">
+                    <a class="foot_link" href="/download.html">Downloads</a>
+                    <a class="foot_link" href="/download.html#support">Support</a>
+                    <a class="foot_link" href="#contact_section">Contact</a>
+                    <a class="foot_link" href="/demo.html">Request a Demo</a>
+                </div>
+                <div class="flex flex_column gap_6">
+                        <a class="foot_link" href="/terms.html">Terms</a>
+                        <a class="foot_link" href="/privacy.html">Privacy</a>
+                        <a class="foot_link" href="/cookies.html">Cookies</a>
+                </div>
+                <div>
+                    <img class="nbaa_logo" src="./assets/images/nbaa.png" alt="nbaa">
+                </div>
+            </div>
+            <div class="mobile_footer flex flex_column">
+                <div class="flex justify_between align_center">
+                    <div>
+                    <a href="/home.html">
+                        <img class="footer_logo" src="./assets/images/logo.png" alt="logo">
+                    </a>
+                    </div>
+                    <div>
+                        <img class="nbaa_logo" src="./assets/images/nbaa.png" alt="nbaa">
+                    </div>
+                </div>
+                <hr class="mt-8 mb-8">
+                <div class="flex justify_between">
+                    <div class="flex flex_column gap_6">
+                        <a class="foot_link" href="/home.html">Home</a>
+                        <a class="foot_link" href="/features.html">Features & Pricing</a>
+                        <a class="foot_link" href="/about.html">About Us</a>
+                    </div>
+                    <div class="flex flex_column gap_6">
+                        <a class="foot_link" href="/download.html">Downloads</a>
+                        <a class="foot_link" href="/download.html#support">Support</a>
+                        <a class="foot_link" href="#contact_section">Contact</a>
+                        <a class="foot_link" href="/demo.html">Request a Demo</a>
+                    </div>
+                    <div class="flex flex_column gap_6">
+                        <a class="foot_link" href="/terms.html">Terms</a>
+                        <a class="foot_link" href="/privacy.html">Privacy</a>
+                        <a class="foot_link" href="/cookies.html">Cookies</a>
+                    </div>
+                </div>
+
+            </div>
+            <p class="copyright text_center typography_3x_small mt-15 text_teritiary_80">© Copyright 2016-2023 Stax
+                Aviation
+                Group LLC - All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
