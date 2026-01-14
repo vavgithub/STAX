@@ -16,7 +16,7 @@
 <body class="download_page">
     <header class="header ">
         <div class="header_main wrapper_1920">
-            <div class=" flex justify_between align_center">
+            <div class="main-top-head flex justify_between align_center">
                 <a href="/home.html">
                     <img class="header_logo" src="./assets/images/logo.png" alt="logo">
                 </a>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
             </div>
-            <div id="mobile_nav" class="mobile_nav_dropdown flex flex_column gap_6 ">
+            <div id="mobile_nav" class="mobile_nav_dropdown flex flex_column  ">
                 <a class="nav_link mt-6" href="/features.html">Features & Pricing</a>
                 <a class="nav_link" href="/about.html">About Us</a>
                 <a class="nav_link nav_active" href="/download.html">Download</a>
@@ -69,36 +69,44 @@
     <section class="download_section bg_background_50">
         <div class="wrapper_1280">
             <h1 class="mb-15">Download Latest Version of Stax™</h1>
-            <div class="download_sec sec_1 mb-15">
-                <div class="flex flex_column gap_12">
-                    <p class="sec_head typography_35x_large extra_bold">Stax™ <span class="font_extra_light">ver</span><span class="font_normal">4.8.6</span>
-                    </p>
-                    <p class="sec_content extra_bold">Hangar 4caster reconfigured and improved, pop-up calendar for
-                        date/time
-                        entry, Fleet search in
-                        the hangar, Fast arrow keys for precise movement, and many other new UI features.</p>
-                </div>
-                <div class="down_box flex flex_column justify_start gap_3">
-                    <div class="flex align_center gap_6">
-                        <div class="tool_icon">
-                            <img src="./assets/images/windows.png" alt="windows-logo">
-                        </div>
-                        <a class="typography_35x_large text_primary extra_bold">Stax™ <span class="font_normal">for
-                                Windows</span></a>
+            <div class="download_sec sec_1 ">
+                <div class=" sec_content_main flex flex_column gap_12">
+                    <div class="flex flex_column gap_4">
+                        <div class="sec_desc flex flex_column gap_12">
+                            <p class="sec_head typography_35x_large extra_bold">Stax™ <span
+                                    class="font_extra_light">ver</span><span class="font_normal">4.8.6</span>
+                            </p>
+                            <p class="sec_content extra_bold">Hangar 4caster reconfigured and improved, pop-up calendar for
+                                date/time
+                                entry, Fleet search in
+                                the hangar, Fast arrow keys for precise movement, and many other new UI features.</p>
+                            </div>
+                        <hr>
                     </div>
-                    <hr>
+                    <div class="flex flex_column gap_4">
+                        <div class="sec_desc flex flex_column gap_12">
+                            <p class="sec_head  typography_35x_large extra_bold">Stax™ <span
+                                    class="font_extra_light">ver</span><span class="font_normal">4.8.5</span>
+                            </p>
+                            <p class="sec_content extra_bold">Hangar 4caster reconfigured and improved, pop-up calendar for
+                                date/time
+                                entry, Fleet search in
+                                the hangar, Fast arrow keys for precise movement, and many other new UI features.</p>
+                            </div>
+                        <hr>
+                    </div>
                 </div>
-            </div>
-            <div class="download_sec sec_2">
-                <div class="flex flex_column gap_12">
-                    <p class="sec_head  typography_35x_large extra_bold">Stax™ <span class="font_extra_light">ver</span><span class="font_normal">4.8.5</span>
-                    </p>
-                    <p class="sec_content extra_bold">Hangar 4caster reconfigured and improved, pop-up calendar for
-                        date/time
-                        entry, Fleet search in
-                        the hangar, Fast arrow keys for precise movement, and many other new UI features.</p>
-                </div>
-                <div class="flex flex_column justify_start gap_6">
+                <div class="flex flex_column gap_6">
+                    <div class="down_box flex flex_column justify_start gap_3">
+                        <div class="flex align_center gap_6">
+                            <div class="tool_icon">
+                                <img src="./assets/images/windows.png" alt="windows-logo">
+                            </div>
+                            <a class="typography_35x_large text_primary extra_bold">Stax™ <span class="font_normal">for
+                                    Windows</span></a>
+                        </div>
+                        <hr>
+                    </div>
                     <div class="down_box flex flex_column gap_3">
                         <div class="flex align_center gap_6">
                             <div class="tool_icon">
@@ -166,8 +174,8 @@
         <div class="tab_content bg_background_40 py-25">
 
             <div id="faq-main" class="faq-content content_main wrapper_1280">
-                <div class="faq_1 flex flex_column gap_9">
-                    <div id="faq_1_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up ">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -177,7 +185,7 @@
                         <h4 class="mt-0">How do I create a hangar or ramp?</h4>
                     </div>
                     <hr>
-                    <div id="faq_1_content" class="tab_content_description">
+                    <div class="tab_content_description">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -187,8 +195,8 @@
                     </div>
                 </div>
 
-                <div class="faq_2 flex flex_column gap_9">
-                    <div id="faq_2_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -198,7 +206,7 @@
                         <h4>How do I rotate an aircraft?</h4>
                     </div>
                     <hr>
-                    <div id="faq_2_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -208,8 +216,8 @@
                     </div>
                 </div>
 
-                <div class="faq_3 flex flex_column gap_9">
-                    <div id="faq_3_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -219,7 +227,7 @@
                         <h4>How do I get the HUDs to display?</h4>
                     </div>
                     <hr>
-                    <div id="faq_3_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -229,8 +237,8 @@
                     </div>
                 </div>
 
-                <div class="faq_4 flex flex_column gap_9">
-                    <div id="faq_4_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -240,7 +248,7 @@
                         <h4>How do I add an aircraft to the catalog?</h4>
                     </div>
                     <hr>
-                    <div id="faq_4_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -250,8 +258,8 @@
                     </div>
                 </div>
 
-                <div class="faq_5 flex flex_column gap_9">
-                    <div id="faq_5_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -261,7 +269,7 @@
                         <h4>How can I make sure our data is safe?</h4>
                     </div>
                     <hr>
-                    <div id="faq_5_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -271,8 +279,8 @@
                     </div>
                 </div>
 
-                <div class="faq_6 flex flex_column gap_9">
-                    <div id="faq_6_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -282,7 +290,7 @@
                         <h4>What do I do if I think there is a bug in the program?</h4>
                     </div>
                     <hr>
-                    <div id="faq_6_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -292,8 +300,8 @@
                     </div>
                 </div>
 
-                <div class="faq_7 flex flex_column gap_9">
-                    <div id="faq_7_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -303,7 +311,7 @@
                         <h4>How do I download for my Mac if the browser don't let me?</h4>
                     </div>
                     <hr>
-                    <div id="faq_7_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -313,8 +321,8 @@
                     </div>
                 </div>
 
-                <div class="faq_8 flex flex_column gap_9">
-                    <div id="faq_8_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -324,7 +332,7 @@
                         <h4>How do I download for my Windows PC if the browser don't let me?</h4>
                     </div>
                     <hr>
-                    <div id="faq_8_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -334,8 +342,8 @@
                     </div>
                 </div>
 
-                <div class="faq_9 flex flex_column gap_9">
-                    <div id="faq_9_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -345,7 +353,7 @@
                         <h4>Are the airraft 3D?</h4>
                     </div>
                     <hr>
-                    <div id="faq_9_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -355,8 +363,8 @@
                     </div>
                 </div>
 
-                <div class="faq_10 flex flex_column gap_9">
-                    <div id="faq_10_item" class="tab_content_item">
+                <div class="faq_item_container flex flex_column gap_9">
+                    <div class="tab_content_item">
                         <div class="chevron chevron_up hidden">
                             <img src="./assets/images/chevron_up.png" alt="">
                         </div>
@@ -366,7 +374,7 @@
                         <h4>Will Stax auto-stack my hanger?</h4>
                     </div>
                     <hr>
-                    <div id="faq_10_content" class="tab_content_description hidden">
+                    <div class="tab_content_description hidden">
                         <p class="typography_body text_secondary_60">If TruTow™ is active, you can not rotate an
                             aircraft in place.<br><br> With TruTow™ off: <br>On a Mac or Windows computer, select the
                             aircraft, then holding down the left shift key, drag your mouse or track pad to rotate. The
@@ -447,7 +455,7 @@
             </form>
         </div>
     </section>
-    <footer class="bg_background_70 p-16">
+    <footer class="bg_background_70 ">
         <div class="wrapper_1280  ">
             <div class="desktop_footer grid grid_cols_5">
                 <div>
@@ -587,45 +595,53 @@
                 videos_main.style.setProperty("display", "block", "important")
             }
         })
-        // FAQ Elements
-        const faq_1_item = document.getElementById("faq_1_item");
-        const faq_2_item = document.getElementById("faq_2_item");
-        const faq_3_item = document.getElementById("faq_3_item");
-        const faq_4_item = document.getElementById("faq_4_item");
-        const faq_5_item = document.getElementById("faq_5_item");
-        const faq_6_item = document.getElementById("faq_6_item");
-        const faq_7_item = document.getElementById("faq_7_item");
-        const faq_8_item = document.getElementById("faq_8_item");
-        const faq_9_item = document.getElementById("faq_9_item");
-        const faq_10_item = document.getElementById("faq_10_item");
-        // ✅ Reusable function
-        function toggleFAQ(item, contentId) {
-            item.addEventListener("click", () => {
-                const el = document.getElementById(contentId);
-                const chevronUp = item.querySelector(".chevron_up");
-                const chevronDown = item.querySelector(".chevron_down");
-                if (el.classList.contains("hidden")) {
-                    el.classList.remove("hidden");
-                    chevronUp.classList.remove("hidden");
-                    chevronDown.classList.add("hidden");
+        // FAQ Accordion - Dynamic approach using classes
+        function initializeFAQAccordion() {
+            // Find all FAQ items within the FAQ section
+            const faqItems = document.querySelectorAll('#faq-main .tab_content_item');
+            
+            faqItems.forEach(item => {
+                // Find the parent container
+                const parentContainer = item.closest('.faq_item_container');
+                if (!parentContainer) return;
+
+                // Find the content and chevrons
+                const content = parentContainer.querySelector('.tab_content_description');
+                const chevronUp = item.querySelector('.chevron_up');
+                const chevronDown = item.querySelector('.chevron_down');
+
+                if (!content || !chevronUp || !chevronDown) return;
+
+                // Initialize chevron state based on content visibility
+                const isContentHidden = content.classList.contains('hidden');
+                if (isContentHidden) {
+                    chevronUp.classList.add('hidden');
+                    chevronDown.classList.remove('hidden');
                 } else {
-                    el.classList.add("hidden");
-                    chevronUp.classList.add("hidden");
-                    chevronDown.classList.remove("hidden");
+                    chevronUp.classList.remove('hidden');
+                    chevronDown.classList.add('hidden');
                 }
+
+                // Add click event listener
+                item.addEventListener('click', () => {
+                    // Toggle hidden class on content
+                    content.classList.toggle('hidden');
+
+                    // Toggle chevron visibility based on new state
+                    const isNowHidden = content.classList.contains('hidden');
+                    if (isNowHidden) {
+                        chevronUp.classList.add('hidden');
+                        chevronDown.classList.remove('hidden');
+                    } else {
+                        chevronUp.classList.remove('hidden');
+                        chevronDown.classList.add('hidden');
+                    }
+                });
             });
         }
-        // 📌 Call the function for each item
-        toggleFAQ(faq_1_item, "faq_1_content");
-        toggleFAQ(faq_2_item, "faq_2_content");
-        toggleFAQ(faq_3_item, "faq_3_content");
-        toggleFAQ(faq_4_item, "faq_4_content");
-        toggleFAQ(faq_5_item, "faq_5_content");
-        toggleFAQ(faq_6_item, "faq_6_content");
-        toggleFAQ(faq_7_item, "faq_7_content");
-        toggleFAQ(faq_8_item, "faq_8_content");
-        toggleFAQ(faq_9_item, "faq_9_content");
-        toggleFAQ(faq_10_item, "faq_10_content");
+
+        // Initialize FAQ accordion on page load
+        initializeFAQAccordion();
     </script>
 </body>
 

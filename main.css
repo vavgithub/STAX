@@ -18,7 +18,7 @@
     --teritiary-text-color : #00004B;
     --teritiary-text-color-90 : #0C0B3E;
     --teritiary-text-color-80 : #6B7A99;
-    
+    --teritiary-text-color-70 : #010193;
 
     --accent-red : #FE283E;
     --accent-blue : #1F65FB;
@@ -666,10 +666,21 @@ button {
     white-space: nowrap;
 }
 
+.neutral_btn {
+    border: none;
+    background: transparent;
+}
+
 .primary_btn{
     border: none;
     color:var(--primary-text-color);
     background-color: var(--primary-btn);
+    transition: all 150ms ease-in-out;
+}
+
+.primary_btn:hover {
+    background-color: var(--info-color);
+    color: var(--teritiary-text-color-90);
 }
 
 .secondary_btn{
@@ -678,16 +689,32 @@ button {
     color: var(--primary-text-color);
 }
 
+.secondary_btn:hover {
+    background:var(--info-color);
+    color: var(--teritiary-text-color-90);
+}
+
 .teritiary_btn {
     border: 2px solid var(--primary-btn);
     background:var(--primary-color);
     color: var(--primary-btn);
 }
 
+.teritiary_btn:hover {
+    border: 2px solid var(--teritiary-text-color-70);
+    color: var(--teritiary-text-color-70);
+}
+
 .info_btn {
     border: none;
     background:var(--info-color);
     color: var(--teritiary-text-color-90);
+    transition: all 150ms ease-in-out;
+}
+
+.info_btn:hover {
+    background:var(--primary-btn);
+    color: var(--primary-text-color);
 }
 
 .btn_xlarge {
@@ -751,6 +778,10 @@ sup {
 
 .justify_start {
     justify-content: start;
+}
+
+.justify_end {
+    justify-content: end;
 }
 
 .justify_between {
@@ -837,7 +868,7 @@ input[type="checkbox"] {
   -moz-appearance: none;
   width: 36px;
   height: 36px;
-  border: 3px solid yellow;
+  border: 2px solid yellow;
   background-color: transparent;
   cursor: pointer;
   border-radius: 4px;
@@ -908,6 +939,10 @@ textarea::placeholder , input::placeholder {
 
 .text_center {
     text-align: center;
+}
+
+.text_right {
+    text-align: right;
 }
 
 header {

@@ -9,12 +9,19 @@
   display: block;
 }
 
+.lottie_section {
+    max-width: none !important;
+}
+
 .home_section {
     background-color: var(--secondary-color-80);
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .abilities_section {
     overflow-x: clip;
+    max-width: none !important;
 }
 
 .abilities_section .abilities_main {
@@ -25,6 +32,7 @@
     align-items: center;
     height: 100%;
     overflow-x: clip;
+    padding: 0rem 3rem;
 }
 
 .abilities_main img {
@@ -47,7 +55,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    width: 75rem;
+    width: 80.5rem;
 }
 
 .parellelogram_bg {
@@ -63,7 +71,7 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    width: 75rem;
+    width: 80.5rem;
 }
 
 .abilities_img_container , .about_main_img_container , .about_bottom_img_container{
@@ -82,6 +90,8 @@
 
 .abilities_section .abilities_img_container img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -139,6 +149,12 @@
     width: 27.5rem;
 }
 
+footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
 
 .link_grid {
     display: grid;
@@ -155,6 +171,7 @@
 
 .industry_section {
     overflow-x: clip !important;
+    max-width: none !important;
 }
 
 .industry_section .industry_main {
@@ -184,6 +201,8 @@
 .industry_section img {
     position: relative;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     display: block;
     z-index: -2;
 }
@@ -254,11 +273,13 @@ footer .nbaa_logo {
     overflow-x: clip;
     margin-top: 0rem !important;
     margin-bottom: 0rem !important;
+    max-width: none !important;
 }
 
 .feat_img_container {
     position: absolute;
     height: 100%;
+    width: 100%;
     top: 0;
     left: 50%;
     transform: translate(-50%);
@@ -267,6 +288,8 @@ footer .nbaa_logo {
 
 .feat_img_container img {
     height: 100%;
+    width: 100%;
+    display: block;
     object-fit: cover;
 }
 
@@ -464,6 +487,7 @@ table , th , td {
 
 .action_section {
     margin-bottom: 0rem;
+    max-width: none !important;
 }
 
 
@@ -490,6 +514,8 @@ table , th , td {
 .action_img_container img {
     display: block;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .action_triangle_top {
@@ -650,12 +676,23 @@ table , th , td {
     position: relative;
     z-index: 5;
     background-color: #080823;
-    padding: 2.875rem 0rem;
 }
 
-.header_main{
-    padding: 0 3em;
+.header .main-top-head {
+    padding-top: 2.875rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
+
+.header .top_head {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2.875rem;
+}
+
+/* .header_main{
+    padding: 0 3em;
+} */
 
 .nav_items {
     display: flex;
@@ -667,6 +704,10 @@ table , th , td {
     color: #7A9AE4;
     font-size: 1.25rem;
     font-weight: 700;
+}
+
+.nav_link:hover {
+    color: var(--info-color);
 }
 
 #nav_hamburger {
@@ -682,8 +723,11 @@ table , th , td {
     position: absolute;
     width: fit-content;
     bottom: 0;
-    left: 70%;
+    left: 65%;
     transform: translateX(-30%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
 .lottie_text_container p {
@@ -700,6 +744,17 @@ table , th , td {
     display: none;
 }
 
+.mobile_nav_dropdown .nav_link {
+    padding: 1.5rem 3rem !important;
+    background-color: #04035a;
+    border-bottom: 1px solid var(--secondary-text-color-80);
+    color: var(--primary-text-color-90);
+}
+
+.mobile_nav_dropdown .nav_link:hover {
+    background-color: var(--teritiary-text-color-70);
+}
+
 .mobile_industry_content {
     width: 100%;
     display: none !important;
@@ -708,6 +763,9 @@ table , th , td {
 
 .team_section {
     height: 40rem;
+    max-width: none !important;
+    margin-top: 16rem !important;
+    margin-bottom: 16rem !important;
 }
 
 .teams_cube {
@@ -794,7 +852,11 @@ table , th , td {
 
 .about_main_section {
     padding-bottom: 32rem;
+    max-width: none !important;
+}
 
+.about_bottom_section {
+    max-width: none !important;
 }
 
 .about_bottom_content {
@@ -803,11 +865,15 @@ table , th , td {
 
 .about_main_img_container img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     display: block;
 }
 
  .about_bottom_img_container img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
     scale: 1.4;
     display: block;
  }
@@ -973,7 +1039,7 @@ table , th , td {
  }
 
  .checkbox_v2_main input[type="checkbox"] {
-    border: 3px solid #7A9AE4 !important;
+    border: 2px solid #7A9AE4 !important;
  }
 
  .checkbox_main label p , .checkbox_v2_main label p  {
@@ -1044,7 +1110,6 @@ table , th , td {
 }
 
 .action_section .action_main {
-    max-width: 1920px !important;
     margin-inline: auto !important;
 }
 
@@ -1058,6 +1123,7 @@ table , th , td {
     max-width: none !important;
 
 }
+
 
 .terms_section .terms_main , .privacy_section .privacy_main , .cookies_section .cookies_main {
     display: flex;
@@ -1075,6 +1141,13 @@ table , th , td {
     gap: 1rem;
 }
 
+@media (max-width: 2560px) {
+    .team_section {
+        margin-top: 10rem !important;
+        margin-bottom: 10rem !important;
+    }
+}
+
 /*Media Queries*/
 @media (max-width: 1920px) {
     .left_gradient ,.right_gradient{
@@ -1082,6 +1155,10 @@ table , th , td {
     }
     body {
         background-color: white !important;
+    }
+    .team_section {
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
     }
 }
 
@@ -1117,25 +1194,18 @@ table , th , td {
         top: 75% !important;
     }
 
-    .home_logos {
-        grid-template-columns: 1fr 1fr !important;
-    }
-    .home_content {
-        padding: 0rem 2rem;
-    }
-
     .teams_cube_content p {
         font-size: 48px !important;
     }
 
     .abilities_main , .new_ui_section ,.industry_main, 
-     .devices_section, .contact_section , .header , .feat_head h1 ,
+     .devices_section, .contact_section , .header .main-top-head, .header .top_head, .feat_head h1 ,
       .feat_head_content p , .platforms_section , .action_section > h2 ,
        .action_content , .about_main_section , .about_bottom_section ,
         .download_section ,  .support_section h2 , .request_form_section ,
-         .terms_section , .privacy_section  , .cookies_main {
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
+         .terms_section , .privacy_section  , .cookies_main, .home_section , footer , .faq-content , .mobile_tab_main .tab_select {
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
     }
 
     .dyk-content , .doc-content, .videos-content {
@@ -1158,8 +1228,16 @@ table , th , td {
         padding: 60px 36px !important;
     }
 
+    .abilities_top img , .abilities_bottom img  {
+        width: 60% !important;
+    }
+
     .industry_triangle_top , .industry_triangle_bottom {
         width: 70rem !important;
+    }
+
+    .abilities_triangle_top , .abilities_triangle_bottom {
+        width: 71rem !important;
     }
 
     .abilities_top , .abilities_bottom {
@@ -1226,11 +1304,12 @@ table , th , td {
 
     .industry_bottom p , .industry_bottom h6 {
         text-align: left;
-        color: var(--primary-text-color);
+        color: var(--primary-text-color) !important;
     }
 
      .abilities_main .abilities_center  {
-        margin: 9rem 0rem;
+        margin-top: 13rem;
+        margin-bottom: 9rem;
         flex-direction: column;
         gap: 8rem;
      }
@@ -1259,7 +1338,7 @@ table , th , td {
     }
 
     .abilities_top img {
-        width: 100% !important;
+        width: 70% !important;
     }
 
     .link_grid {
@@ -1310,17 +1389,15 @@ table , th , td {
         font-size: 20px !important;
     }
 
-    .home_content {
-        padding: 0rem 2.5rem;
-    }
 
-     .new_ui_section , .devices_section  , .contact_section , .header {
+     .new_ui_section , .devices_section  , .contact_section , .header .main-top-head, .header .top_head, .home_section , footer , .abilities_main , .industry_main , .feat_head h1 ,
+     .feat_head_content p , .platforms_section , .action_section > h2 ,
+      .action_content , .about_main_section , .about_bottom_section , .download_section , .support_section h2, .faq-content , .mobile_tab_main .tab_select , .request_form_section{
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
     }
-    .abilities_main ,.industry_main {
-        padding-left: 36px !important;
-        padding-right: 36px !important;
+    .platforms_section .left_aligned , .platforms_section .details{
+        padding-left: 2.5rem !important;
     }
     .lottie_text_container p {
         font-size: 3.5rem !important;
@@ -1372,6 +1449,15 @@ table , th , td {
 
     .download_sec {
         grid-template-columns: 1fr;
+    }
+
+    .download_sec .sec_content_main {
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+
+    .download_sec .sec_desc_hr {
+        display: block;
     }
 
     .download_sec .sec_content {
@@ -1466,6 +1552,10 @@ table , th , td {
         font-size: 12px;
     }
 
+    .home_logos {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
     .faq-content > div {
         gap: 32px !important;
     }
@@ -1512,9 +1602,6 @@ table , th , td {
         transform: translateY(60px) !important;
     }
 
-    .download_section , .contact_section{
-        padding-top: 60px !important;
-    }
 
     .request_form_section input[type="checkbox"] {
         width: 24px !important;
@@ -1536,9 +1623,6 @@ table , th , td {
         padding-bottom: 60px !important;
     }
 
-    .download_section {
-        padding-bottom: 48px !important;
-    }
 
     .support_section .tab_content {
         padding-top: 0px !important;
@@ -1677,9 +1761,7 @@ table , th , td {
         width: 100% !important;
     }
 
-    footer{
-        padding: 4rem 2rem !important;
-    }
+
 
     .home_section {
         padding-bottom: 20rem !important;
@@ -1724,7 +1806,8 @@ table , th , td {
     }
 
     .platforms_section .details {
-       padding: 60px 36px 36px 36px !important;
+       padding-bottom: 36px !important;
+       padding-top: 60px !important;
     }
 
     .tru_tow_details_chart img , .tru_tow_details_chart .details_description{
