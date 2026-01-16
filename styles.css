@@ -771,7 +771,7 @@ table , th , td {
 .lottie_text_container {
     position: absolute;
     width: fit-content;
-    bottom: 0;
+    bottom: 6vh;
     left: 65%;
     transform: translateX(-30%);
     display: grid;
