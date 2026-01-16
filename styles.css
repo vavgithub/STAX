@@ -302,22 +302,71 @@ footer .nbaa_logo {
     transform: translateY(10rem);
 }
 
+.plans-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+}
 
 .feat_head {
     display: flex;
     flex-direction: column;
     gap: 3.75rem;
+    padding: 0rem 3rem;
 }
 
 .feat_head_content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3.75rem;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
+.feat_head_content h3 {
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
 .feat_plan_box {
-    padding: 2.25rem;
-    background-color: #1F65FB;
+    padding: 3rem 1.5rem;
+    background-color: #6691F6;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    cursor: pointer;
+}
+
+.feat_plan_box h5  {
+    max-width: 100%;
+}
+
+/* Hide chevron icon on desktop - only show on mobile */
+.plan_chevron_icon {
+    display: none;
+}
+
+.download_content_hr {
+    display: none !important;
+}
+
+.plans-main .active{
+    background-color: #1F65FB !important;
+}
+
+.feat_plan_box ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+}
+
+.feat_plan_box ul li {
+    padding-left: 0;
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+}
+
+.feat_plan_box .plan_accordion_content {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -1199,8 +1248,7 @@ table , th , td {
     }
 
     .abilities_main , .new_ui_section ,.industry_main, 
-     .devices_section, .contact_section , .header .main-top-head, .header .top_head, .feat_head h1 ,
-      .feat_head_content p , .platforms_section , .action_section > h2 ,
+     .devices_section, .contact_section , .header .main-top-head, .header .top_head, .feat_head , .platforms_section , .action_section > h2 ,
        .action_content , .about_main_section , .about_bottom_section ,
         .download_section ,  .support_section h2 , .request_form_section ,
          .terms_section , .privacy_section  , .cookies_main, .home_section , footer , .faq-content , .mobile_tab_main .tab_select {
@@ -1390,8 +1438,7 @@ table , th , td {
     }
 
 
-     .new_ui_section , .devices_section  , .contact_section , .header .main-top-head, .header .top_head, .home_section , footer , .abilities_main , .industry_main , .feat_head h1 ,
-     .feat_head_content p , .platforms_section , .action_section > h2 ,
+     .new_ui_section , .devices_section  , .contact_section , .header .main-top-head, .header .top_head, .home_section , footer , .abilities_main , .industry_main , .feat_head, .platforms_section , .action_section > h2 ,
       .action_content , .about_main_section , .about_bottom_section , .download_section , .support_section h2, .faq-content , .mobile_tab_main .tab_select , .request_form_section{
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
@@ -1406,8 +1453,16 @@ table , th , td {
 }
 
 @media (max-width: 1024px) {
+    .download_content_hr {
+        display: block !important;
+    }
+
     .feat_head_content {
         grid-template-columns: 1fr !important;
+    }
+
+    .feat_plan_box h5  {
+        max-width: 60%;
     }
 
     .request_form_section .form_main {
@@ -1522,8 +1577,8 @@ table , th , td {
         font-size: 16px !important;
     }
 
-    .feat_plan_box p {
-        margin: 0rem 12px !important;
+    .plans-main {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1544,12 +1599,20 @@ table , th , td {
     .mobile_footer {
         display: block;
     }
+
+    .feat_plan_box h5  {
+        max-width: 67%;
+    }
 }
 
 
 @media (max-width: 768px) {
     html {
         font-size: 12px;
+    }
+
+    .feat_plan_box h5  {
+        max-width: 80%;
     }
 
     .home_logos {
@@ -1842,6 +1905,12 @@ table , th , td {
     }
 }
 
+@media (max-width: 670px) {
+    .feat_plan_box h5 {
+        max-width: 90% !important;
+    }
+}
+
 @media (max-width: 576px) {
     .icons_grid {
         justify-content: center;
@@ -1956,5 +2025,50 @@ table , th , td {
         padding-top: 100px !important;
     }
 
+}
 
+@media (max-width: 420px) {
+    .plans-main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feat_plan_box h5 {
+        max-width: 70% !important;
+    }
+    
+    /* Accordion styles for mobile */
+    .feat_plan_box .plan_accordion_btn {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        cursor: pointer;
+        width: 100%;
+        max-width: 100% !important;
+    }
+    
+    .feat_plan_box .plan_chevron_icon {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        transform: rotate(180deg); /* Point down when closed */
+    }
+    
+    .feat_plan_box .plan_accordion_btn.active .plan_chevron_icon {
+        transform: rotate(0deg); /* Point up when open */
+    }
+    
+    .feat_plan_box .plan_accordion_content {
+        display: none;
+    }
+    
+    .feat_plan_box.active .plan_accordion_content {
+        display: flex;
+    }
+
+    .feat_plan_box .plan_accordion_content {
+        margin-left: 3.25rem !important;
+    }
 }
