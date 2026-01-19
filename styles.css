@@ -1261,7 +1261,7 @@ table , th , td {
     .abilities_main , .new_ui_section ,.industry_main, 
      .devices_section, .contact_section , .header .main-top-head, .header .top_head, .feat_head , .platforms_section , .action_section > h2 ,
        .action_content , .about_main_section , .about_bottom_section ,
-        .download_section ,  .support_section h2 , .request_form_section ,
+        .download_section ,  .support_section h2 , .request_form_section , .generic_index_section .generic_main,
          .terms_section , .privacy_section  , .cookies_main, .home_section , footer , .faq-content , .mobile_tab_main .tab_select {
         padding-left: 5rem !important;
         padding-right: 5rem !important;
@@ -1315,11 +1315,6 @@ table , th , td {
     .details_grid {
         gap: 2rem;
         flex-direction: column;
-    }
-
-    .generic_main {
-        padding-left: 16px !important;
-        padding-right: 16px !important;
     }
 
     .lottie_text_container p {
@@ -1450,7 +1445,7 @@ table , th , td {
 
 
      .new_ui_section , .devices_section  , .contact_section , .header .main-top-head, .header .top_head, .home_section , footer , .abilities_main , .industry_main , .feat_head, .platforms_section , .action_section > h2 ,
-      .action_content , .about_main_section , .about_bottom_section , .download_section , .support_section h2, .faq-content , .mobile_tab_main .tab_select , .request_form_section{
+      .action_content , .about_main_section , .about_bottom_section , .download_section , .support_section h2, .faq-content , .mobile_tab_main .tab_select , .request_form_section , .generic_index_section .generic_main {
         padding-left: 2.5rem !important;
         padding-right: 2.5rem !important;
     }
