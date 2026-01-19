@@ -226,7 +226,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    width: 76rem;
+    width: 77rem;
 }
 
 .industry_triangle_bottom {
@@ -235,7 +235,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     z-index: -1;
-    width: 76rem;
+    width: 77rem;
 }
 
 .industry_section .industry_bottom {
@@ -518,14 +518,25 @@ table , th , td {
     height: 2.5rem;
 }
 
+.platforms_section .icon_wrapper:hover {
+    background-color: var(--teritiary-text-color-70) !important;
+    color: var(--primary-text-color) !important;
+}
+
 .platforms_section .icon_wrapper_active {
     display: none;
     align-items: center;
     justify-content: center;
     background-color: #0C0B3E;
+    color: var(--primary-text-color) !important;
     border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.platforms_section .icon_wrapper_active:hover {
+    background-color: var(--info-color) !important;
+    color: var(--teritiary-text-color-90) !important;
 }
 
 .platforms_section .text_with_icon {
@@ -771,12 +782,12 @@ table , th , td {
 .lottie_text_container {
     position: absolute;
     width: fit-content;
-    bottom: 6vh;
+    bottom: 1.5rem;
     left: 65%;
     transform: translateX(-30%);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 0rem 1rem;
 }
 
 .lottie_text_container p {
@@ -1281,7 +1292,7 @@ table , th , td {
     }
 
     .industry_triangle_top , .industry_triangle_bottom {
-        width: 70rem !important;
+        width: 74rem !important;
     }
 
     .abilities_triangle_top , .abilities_triangle_bottom {
@@ -1293,7 +1304,7 @@ table , th , td {
     }
 
     .industry_bottom {
-        width: 50% !important;
+        width: 55% !important;
     }
 }
 
@@ -1765,8 +1776,9 @@ table , th , td {
         margin-top: 24px !important;
     }
 
-    .devices_section .link_grid_right a {
+    .devices_section .link_grid a {
         font-size: 20px !important;
+        text-align: left;
     }
 
     .contact_form .form_main {
@@ -1790,8 +1802,13 @@ table , th , td {
         font-size: 16px !important;
     }
 
-    .abilities_top img , .abilities_bottom img  {
-        width: 100% !important;
+    .abilities_top img , .abilities_bottom img , .abilities_center img {
+        width: 30rem !important;
+        margin: auto !important;
+    }
+
+    .abilities_center {
+        margin-bottom: 16rem !important;
     }
 
     .icons_grid {
@@ -1823,8 +1840,6 @@ table , th , td {
     .contact_form button {
         width: 100% !important;
     }
-
-
 
     .home_section {
         padding-bottom: 20rem !important;
@@ -1981,6 +1996,10 @@ table , th , td {
         width: 78rem !important;
     }
     
+    /* .abilities_top img {
+        width: 70% !important;
+    } */
+
     .btn_xlarge {
         width: 100%;
     }
@@ -2033,6 +2052,9 @@ table , th , td {
     }
     .feat_plan_box h5 {
         max-width: 70% !important;
+    }
+    .lottie_text_container  {
+        bottom: 0.25rem;
     }
     
     /* Accordion styles for mobile */
