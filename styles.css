@@ -625,7 +625,7 @@ table , th , td {
 
 .contact_section {
     width: 100%;
-    padding: 10rem 0rem;
+    padding: 6rem 0rem !important;
     background-color: var(--secondary-color-80);
     margin-top: 0rem;
     margin-bottom: 0rem;
@@ -694,10 +694,13 @@ table , th , td {
     justify-content: center;
     align-items: center;
     width: 6.5rem;
+    height: auto;
 }
 .icons_grid img {
     width: 100%;
-    height: fit-content;
+    height: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .icons_grid .icons_img_container:last-child img {
@@ -1689,6 +1692,7 @@ table , th , td {
     }
 
     .contact_section {
+        padding-top: 32px !important;
         padding-bottom: 60px !important;
     }
 
