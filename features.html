@@ -40,7 +40,7 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M7.16675 9H32.8334V12.6667H7.16675V9ZM7.16675 18.1667H32.8334V21.8333H7.16675V18.1667ZM32.8334 27.3333V31H7.16675V27.3333H32.8334Z"
-                                        fill="currentColor" />
+                                        fill="#BBD0FF" />
                                 </svg>
                             </div>
                             <div id="nav_cross">
@@ -48,7 +48,7 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M20 18.1057L8.89426 7L7 8.89426L18.1057 20L7 31.1057L8.89426 33L20 21.8943L31.1057 33L33 31.1057L21.8943 20L33 8.89426L31.1057 7L20 18.1057Z"
-                                        fill="currentColor" />
+                                        fill="#BBD0FF" />
                                 </svg>
 
                             </div>
@@ -1280,7 +1280,7 @@
             </div>
         </section>
 
-        <section id='contact_section' class="contact_section pt-40 ">
+        <section id='contact_section' class="contact_section  ">
             <div class="wrapper_1280">
                 <h2 class="text_primary_90 mt-0">Contact Us</h2>
                 <p class="typography_x_large mb-9 text_teritiary_80">Use the form below to request a demo, ask
@@ -1386,66 +1386,6 @@
     <script src="./js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Plan card click functionality
-            const planCards = document.querySelectorAll('.plans-main .feat_plan_box');
-            const tables = {
-                annual: document.getElementById('annual_table'),
-                month: document.getElementById('month_table'),
-                multi_site: document.getElementById('multi_site_table'),
-                professional_services: document.getElementById('professional_services_table')
-            };
-
-            // Map plan cards to their corresponding tables
-            const planCardMap = [
-                { card: planCards[0], table: tables.annual, name: 'annual' },
-                { card: planCards[1], table: tables.month, name: 'month' },
-                { card: planCards[2], table: tables.multi_site, name: 'multi_site' },
-                { card: planCards[3], table: tables.professional_services, name: 'professional_services' }
-            ];
-
-            // Function to show a specific table and hide others
-            function showTable(selectedPlan) {
-                // Hide all tables
-                Object.values(tables).forEach(table => {
-                    if (table) {
-                        table.classList.add('hidden');
-                    }
-                });
-
-                // Remove active class from all plan cards
-                planCards.forEach(card => {
-                    card.classList.remove('active');
-                });
-
-                // Show selected table and add active class to selected card
-                if (selectedPlan.table) {
-                    selectedPlan.table.classList.remove('hidden');
-                }
-                if (selectedPlan.card) {
-                    selectedPlan.card.classList.add('active');
-                }
-            }
-
-            // Add click event listeners to each plan card
-            planCardMap.forEach(plan => {
-                if (plan.card) {
-                    plan.card.addEventListener('click', (e) => {
-                        // Prevent navigation if clicking on links/buttons inside the card
-                        if (e.target.tagName === 'A' || e.target.tagName === 'BUTTON') {
-                            return;
-                        }
-                        showTable(plan);
-                    });
-                }
-            });
-
-            // Plan box accordion functionality for mobile (below 420px)
-            function togglePlanAccordion(accordionBtn) {
-                const closestPlanBox = accordionBtn.closest('.feat_plan_box');
-                if (closestPlanBox) {
-                    closestPlanBox.classList.toggle('active');
-                }
-            }
 
             // Initialize plan accordion buttons
             document.querySelectorAll('.plan_accordion_btn').forEach(btn => {
