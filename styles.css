@@ -334,7 +334,6 @@ footer .nbaa_logo {
     justify-content: space-between;
     width: 100%;
     min-width: 0;
-    cursor: pointer;
 }
 
 .feat_plan_box h5  {
@@ -1692,7 +1691,7 @@ table , th , td {
     }
 
     .contact_section {
-        padding-top: 32px !important;
+        padding-top: 30px !important;
         padding-bottom: 60px !important;
     }
 
