@@ -1232,6 +1232,9 @@ table , th , td {
     .team_section {
         height: 30rem !important;
     }
+    .lottie_text_container p {
+        font-size: 3.75rem !important;
+    }
 }
 
 
@@ -1239,7 +1242,6 @@ table , th , td {
     .team_section {
         display: none !important;
     }
-
     .mobile_team_section { 
         display: block !important;
     }
@@ -1320,7 +1322,7 @@ table , th , td {
     }
 
     .lottie_text_container p {
-        font-size: 4rem !important;
+        font-size: 3.5rem !important;
     }
 
     .details_grid_inner {
